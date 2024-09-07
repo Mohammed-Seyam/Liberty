@@ -1,0 +1,359 @@
+:root{
+    --main-color: #7453fc;
+}
+
+/* banner */
+.banner{
+    background-image: url(../images/banner-bg.jpg);
+    padding-bottom: 162px;
+}
+
+.banner .container{
+    padding: 10px 0;
+}
+
+nav{
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin: 30px 0;
+}
+
+.navbar-toggler-icon{
+    color: var(--main-color);
+    font-size: 30px;
+    width: auto;
+    height: auto;
+}
+
+.collapse{
+    flex-direction: row-reverse !important;
+}
+
+nav ul{
+    margin-right: 0 !important;
+}
+
+
+nav ul li a{
+    color: black !important;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 0px 15px;
+}
+
+.active{
+    background-color: var(--main-color);
+    color: #ffffff !important;
+}
+
+.banner .container .content{
+    margin-top: 130px;
+
+}
+
+.banner .container .content .text{
+    color: #ffffff;
+    
+}
+
+.banner .container .content .text h1{
+    font-size: 61px;
+}
+
+.banner .container .content .text p{
+    margin: 40px 0;
+}
+
+
+.container button{
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin: 0 10px;
+    position: relative;
+    transition: all .4s;
+    height: auto;
+}
+
+button::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    background-color: #ffffff;
+    width: 80%;
+    height: 2px;
+}
+
+.outline{
+    border: 1px solid var(--main-color);
+}
+
+.backg{
+    background-color: var(--main-color);
+}
+
+.carousel-item{
+    background-color: transparent;
+}
+
+/* banner hover */
+nav ul li a:hover{
+    background-color: var(--main-color);
+    color: #ffffff !important;
+
+}
+
+
+.backg:hover{
+    background-color: #ffffff;
+    color: var(--main-color);
+}
+
+.outline:hover{
+    background-color: var(--main-color)
+}
+
+/* responsive banner */
+@media(max-width: 992px){
+    nav ul li a{
+        text-align: center;
+        margin: 10px;
+    }
+
+    nav{
+        padding: 0 10px;
+    }
+
+    .slider{
+        margin-top: 50px;
+    }
+
+    .container{
+        padding: 0 20px !important;
+    }
+}
+
+@media(max-width: 700px){
+    .banner .container .content .btns button{
+        margin: 5px 0;
+    }
+
+    .banner{
+        padding-bottom: 100px;
+    }
+}
+/* End banner */
+
+/* sec */
+.sec{
+    background-image: url(../images/dark-bg.jpg);
+    color: #ffffff;
+    padding: 10px 0;
+    padding: 100px 0;
+}
+
+.first{
+    text-align: center;
+}
+
+section .line{
+    height: 2px;
+    width: 100px;
+    margin: 0px auto 30px auto;
+    background-color: var(--main-color);
+}
+
+.sec section h2{
+    margin: 20px 0;
+
+}
+
+.sec section h2 span{
+    color: var(--main-color);
+}
+
+/* categories */
+
+.categories{
+    margin-bottom: 100px;
+}
+
+.categories .items{
+    text-align: center;
+}
+
+.categories .items .item{
+    background-color: #282b2f;
+    border-radius: 20px;
+    border: 1px solid #404245;
+    padding: 30px;
+}
+
+.image{
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    aspect-ratio: 1/1;
+    width: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-items: center;
+}
+
+/* responsive categories */
+
+@media(min-width: 992px){
+    .categories .items .item{
+        width: 15%;
+    }
+}
+
+@media(max-width: 992px){
+    .items .item{
+        margin-top: 20px;
+    }
+}
+
+/* End categories */
+
+/* coollections */
+
+.collections .items .item{
+    text-align: left;
+    
+}
+
+.collections .items .item img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.collections .items .item .details{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.collections .items .item .details h5{
+    margin-bottom: 20px;
+}
+
+.wLine{
+    height: 1px;
+    width: 100%;
+    background-color: #404245;
+    margin: 30px 0;
+}
+
+.spans span{
+    font-size: 18px;
+    padding: 0 !important;
+}
+
+.details button{
+    width: 100%;
+    position: absolute;
+    bottom: -25px;
+    left: -10px;
+}
+
+/* rersponsive collections */
+
+@media(min-width: 992px){
+    .collections .items .item{
+        width: 30%;
+        margin-top: 40px !important;
+    }
+}
+
+@media(max-width: 700px){
+    .collections .items .item{
+        margin-top: 40px;
+    }
+}
+
+/* End collections */
+
+/* create */
+.create{
+    background-image: url(../images/main-bg.jpg);
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.create .container{
+    text-align: left;
+}
+
+.create .container .head{
+    position: relative;
+    align-items: center;
+    height: 100px;
+}
+
+.create .container .head h2{
+    margin:0 !important;
+}
+
+.cLine{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100px;
+    background-color: #ffffff;
+}
+
+.create .container .items .item .image{
+    margin: 30px 0 !important;
+}
+
+.create .container .items .item h5{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.create .container .items .item p{
+    line-height: 25px;
+}
+
+.spec{
+    position: relative;
+}
+
+.spec::after{
+    content: "";
+    height: 85%;
+    position: absolute;
+    width: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+.one::before{
+    content:"1";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    z-index: 100;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tow::before{
+    content:"2";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    z-index: 100;
+    font-weight: bold;
+    font-size: 20px;
+}
